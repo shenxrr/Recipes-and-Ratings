@@ -1,4 +1,13 @@
 # Recipes-and-Ratings
 
 ## Introduction
-### H3
+
+## Exploratory Data Analysis
+### Data Cleaning
+### Univariate Analysis
+### Bivariate Analysis
+### Interesting Aggregates
+
+## Assessment of Missingness
+
+## Hypothesis Testing
