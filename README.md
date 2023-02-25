@@ -67,12 +67,17 @@ As the time increases, the amount of protein in food recipe decreases.
  
 ### Interesting Aggregates
 
+We make a pivot table with minutes and healthiness. We have three levels of healthiness represented by -1,0, and 1 and we calculate the mean and count of minutes in the pivot table. Therefore it is more straightforward to see the difference in means for each level of healthiness, so we can check how cooking time varies for different levels of healthiness.
+
+
 |   healthiness |     mean |   count |
 |--------------:|---------:|--------:|
 |            -1 | 171.446  |   19833 |
 |             0 | 102.872  |   38228 |
 |             1 |  89.6013 |   25721 |
 ---
+
+
 ## Assessment of Missingness
 
 ---
