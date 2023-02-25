@@ -82,4 +82,17 @@ We make a pivot table with minutes and healthiness. We have three levels of heal
 ---
 ## Hypothesis Testing
 
+Our hypothesis is that cook time(minutes) is a significant predictor of healthiness of a recipe. We state our hypothesis as the following:
+- Null Hypothesis: healthiness and cooking time(minutes) of recipes **are not** related – the low average cooking time of recipes that are rated healthy(1) is due to chance alone
+- Alternative hypothesis: healthiness and cook time(minutes) of recipes **are** related – the low average cook time of recipes that are rated healthy(1) is not due to chance alone
+
+We pick the average cooking time of recipes that are rated healthy as our test statistics.
+This is reasonable to use since minutes are numeric and we can generate an empirical distribution based on the test statistic to see if our observed test statistics was drawn from the distribution. 
+
+We choose 0.05 as our significance level. This is a good value to use since it is a common cutoff for hypothesis testing 
+The resulting p-value is 0.05668 , which is slightly greater than 0.05
+Therefore we failed to reject the null hypothesis.
+We can conclude that the low average cooking time of recipes that are rated  healthy is due to chance alone. 
+We have also visualized the empirical distribution of the test statistic:
+
 ---
