@@ -48,7 +48,7 @@ The following table shows the first five rows of our cleaned Dataframe.
 We make a Histogran to look at the distribution of minutes. The graph is skewed to the right, 
 the longer the time gets, there are less recipes. 
 
-<iframe src="assets/Histogram_of_minutes.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/Histogram-of-minutes.html" width=800 height=600 frameBorder=0></iframe>
 
 
 ### Bivariate Analysis
@@ -59,7 +59,7 @@ The graph shows a negative correlation between cooking time and sugar.
 
 We make another scatter plot to look at the correlation between cooking time and the amount of protein the recipe contains. 
 
-   11
+ 
 
 ### Interesting Aggregates
 ---
