@@ -123,6 +123,7 @@ Our hypothesis is that cook time(minutes) is a significant predictor of healthin
 
 We pick the average cooking time of recipes that are rated healthy as our test statistics.
 This is reasonable to use since minutes are numeric and we can generate an empirical distribution based on the test statistic to see if our observed test statistics was drawn from the distribution. 
+Since our question is about finding the relationship between the cooking time and healthiness of food, we can simulat  results based on our null hypothesis and compare it with our observed test statistics. The alternative hypothesis raises the opposite opinions with our null hypothesis and which is valid.
 
 We choose 0.05 as our significance level. This is a good value to use since it is a common cutoff for hypothesis testing 
 The resulting p-value is 0.05668 , which is slightly greater than 0.05
