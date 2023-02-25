@@ -94,7 +94,9 @@ Null Hypothesis: The missingness in 'average rating' columns does not depend on 
 Alternative Hypothesis: The missingness in 'average rating' columns does depend on 'minutes' column, i.e. they are not from the same distribution
 
 Comparing average rating missing and not-missing distribution:
+
 <iframe src="assets/miss1.html" width=800 height=600 frameBorder=0></iframe>
+
 After running permutation test, we got a p value of 0.0388, which is strictly smaller than our p-value cutoff, 0.05.
 Therefore, we reject the null, and conclude that the missingness in column 'average rating' is MAR dependent on 'minutes'.
 
@@ -106,7 +108,9 @@ Null Hypothesis: The missingness in 'average rating' columns does not depend on 
 Alternative Hypothesis: The missingness in 'average rating' columns does depend on 'high_protein' column, i.e. they are not from the same distribution
 
 Comparing average rating missing and not-missing distribution:
+
 <iframe src="assets/miss2.html" width=800 height=600 frameBorder=0></iframe>
+
 After running permutation test, we got a p value of 0.1316, which is strictly larger than our p-value cutoff, 0.05.
 Therefore, we fail to reject the null, and conclude that the missingness in column 'average rating' does not depend on column 'high_protein'.
 
