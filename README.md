@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The dataset we are using have the recipes and ratings from Food.com https://www.food.com/
+The dataset we are using have the recipes and ratings from Food.com [food.com](https://www.food.com/)
 
 Our research question is about the relationship between the average cooking time and the healthiness of the recipe.
 
