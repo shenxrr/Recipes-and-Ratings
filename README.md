@@ -75,7 +75,6 @@ We make a pivot table with minutes and healthiness. We have three levels of heal
 |            -1 | 171.446  |   19833 |
 |             0 | 102.872  |   38228 |
 |             1 |  89.6013 |   25721 |
----
 
 
 ## Assessment of Missingness
