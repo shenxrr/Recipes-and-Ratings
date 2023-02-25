@@ -78,6 +78,37 @@ We make a pivot table with minutes and healthiness. We have three levels of heal
 
 
 ## Assessment of Missingness
+### NMAR Analysis
+
+We think the column 'name' is MCAR because there is only one row that have 'name' missing, and we cannot get a pattern behind the missingness.
+
+The 'description' column has 70 rows that are missing. Our guess is that users that felt the recipe is simple enough might not want to write a decription for it. As such, we believe the data is not missing at random, i.e. NMAR, since the missingness depends on the value itself.
+
+### Missingness Dependency
+investigate the missingness of 'average rating' column
+
+We run a permutation test to check if the 'average rating' column depends on 'minutes' column
+
+Null Hypothesis: The missingness in 'average rating' columns does not depend on 'minutes' column, i.e. they are from the same distribution
+
+Alternative Hypothesis: The missingness in 'average rating' columns does depend on 'minutes' column, i.e. they are not from the same distribution
+
+Comparing average rating missing and not-missing distribution:
+<iframe src="assets/miss1.html" width=800 height=600 frameBorder=0></iframe>
+After running permutation test, we got a p value of 0.0388, which is strictly smaller than our p-value cutoff, 0.05.
+Therefore, we reject the null, and conclude that the missingness in column 'average rating' is MAR dependent on 'minutes'.
+
+
+We run a permutation test to check if the 'average rating' column depends on 'high_protein' column
+
+Null Hypothesis: The missingness in 'average rating' columns does not depend on 'high_protein' column, i.e. they are from the same distribution
+
+Alternative Hypothesis: The missingness in 'average rating' columns does depend on 'high_protein' column, i.e. they are not from the same distribution
+
+Comparing average rating missing and not-missing distribution:
+<iframe src="assets/miss2.html" width=800 height=600 frameBorder=0></iframe>
+After running permutation test, we got a p value of 0.1316, which is strictly larger than our p-value cutoff, 0.05.
+Therefore, we fail to reject the null, and conclude that the missingness in column 'average rating' does not depend on column 'high_protein'.
 
 ---
 ## Hypothesis Testing
@@ -94,5 +125,5 @@ The resulting p-value is 0.05668 , which is slightly greater than 0.05
 Therefore we failed to reject the null hypothesis.
 We can conclude that the low average cooking time of recipes that are rated  healthy is due to chance alone. 
 We have also visualized the empirical distribution of the test statistic:
-
+<iframe src="assets/hypo.html" width=800 height=600 frameBorder=0></iframe>
 ---
