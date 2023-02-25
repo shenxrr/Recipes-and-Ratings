@@ -1,4 +1,4 @@
-# Data Science Report on Recipes and Ratings
+# Data Science Report on Cooking time and healthiness
 **Names:**  Yi Zhang, Xinran Shen
 
 ## Introduction
@@ -26,7 +26,7 @@ We merged two datasets into one large dataframe. We filled ratings of 0 with np.
 
 Then, we've calculated the average rating for each recipe in the dataset accordingly and added to the dataframe. The column name is "average rating"
                                                                  
-We will only observe the columns that are relevant to our investigation since our goal is to infer the possible effect of cook time on healthiness of recipes.
+We will only observe the columns that are relevant to our investigation since our goal is to infer the possible effect of cooking time on healthiness of recipes.
 
 Then we manipulated the nutrition column to have more detailed information about the nutrition. We seperated each component in nutrition column into multiple columns. we've changed the data type of each of the nutrients to floats since they were strings in a list from the original dataset and which is hard to calculate directly.
 
@@ -117,9 +117,9 @@ Therefore, we fail to reject the null, and conclude that the missingness in colu
 ---
 ## Hypothesis Testing
 
-Our hypothesis is that cook time(minutes) is a significant predictor of healthiness of a recipe. We state our hypothesis as the following:
+Our hypothesis is that cooking time(minutes) is a significant predictor of healthiness of a recipe. We state our hypothesis as the following:
 - Null Hypothesis: healthiness and cooking time(minutes) of recipes **are not** related – the low average cooking time of recipes that are rated healthy(1) is due to chance alone
-- Alternative hypothesis: healthiness and cook time(minutes) of recipes **are** related – the low average cook time of recipes that are rated healthy(1) is not due to chance alone
+- Alternative hypothesis: healthiness and cooking time(minutes) of recipes **are** related – the low average cooking time of recipes that are rated healthy(1) is not due to chance alone
 
 We pick the average cooking time of recipes that are rated healthy as our test statistics.
 This is reasonable to use since minutes are numeric and we can generate an empirical distribution based on the test statistic to see if our observed test statistics was drawn from the distribution. 
