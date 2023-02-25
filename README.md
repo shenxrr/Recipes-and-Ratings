@@ -53,15 +53,25 @@ the longer the time gets, there are less recipes.
 
 ### Bivariate Analysis
 We make a scatter plot to look at the correlation between cooking time and the amount of sugar the recipe contains. 
-The graph shows a negative correlation between cooking time and sugar.
+The graph shows a negative correlation between cooking time and sugar. 
+As the time increases, the amount of sugar in food recipe decreases. 
 
+<iframe src="assets/time_sugar.html" width=800 height=600 frameBorder=0></iframe>
 
 
 We make another scatter plot to look at the correlation between cooking time and the amount of protein the recipe contains. 
+As the time increases, the amount of protein in food recipe decreases.
+
+<iframe src="assets/time_protein.html" width=800 height=600 frameBorder=0></iframe>
 
  
-
 ### Interesting Aggregates
+
+|   healthiness |     mean |   count |
+|--------------:|---------:|--------:|
+|            -1 | 171.446  |   19833 |
+|             0 | 102.872  |   38228 |
+|             1 |  89.6013 |   25721 |
 ---
 ## Assessment of Missingness
 
